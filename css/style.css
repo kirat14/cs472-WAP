@@ -1,0 +1,20 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Helvetica";
+  font-weight: 400;
+  src: url("../fonts/Helvetica.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Helvetica";
+  font-weight: 900;
+  src: url("../fonts/Helvetica-Bold.ttf") format("truetype");
+}
+
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    color: #91939B;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
