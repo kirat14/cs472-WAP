@@ -1,20 +1,129 @@
 @charset "UTF-8";
+
 @font-face {
   font-family: "Helvetica";
   font-weight: 400;
   src: url("../fonts/Helvetica.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "Helvetica";
   font-weight: 900;
   src: url("../fonts/Helvetica-Bold.ttf") format("truetype");
 }
 
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
 
 body {
-    margin: 0;
-    font-family: "Poppins", sans-serif;
-    color: #91939B;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #91939B;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: rgb(34, 39, 55);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(101, 230, 207);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: #fff;
+}
+
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+/* tools */
+.text-center {
+  text-align: center;
+}
+.text-green {
+  color: rgb(101, 230, 207);
+}
+
+.emphasized {
+  font-weight: bold;
+}
+
+/* Paragaraph */
+.drop-caps::first-letter {
+  float: left;
+  font-size: 3rem;
+  line-height: 0.65;
+  margin: 0.1em 0.1em 0.2em 0;
+}
+
+/* Lists */
+.nested-list {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 16px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-left: -24px;
+  margin-right: -24px;
+}
+
+[class^="col"] {
+  flex-grow: 0;
+  flex-shrink: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+@media (min-width: 1200px) {
+
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
   }
+}
