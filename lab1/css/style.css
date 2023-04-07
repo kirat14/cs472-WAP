@@ -65,6 +65,7 @@ h2 {
 .text-center {
   text-align: center;
 }
+
 .text-green {
   color: rgb(101, 230, 207);
 }
@@ -114,11 +115,6 @@ li {
 }
 
 @media (min-width: 1200px) {
-
-  .container-xl,
-  .container-lg,
-  .container-md,
-  .container-sm,
   .container {
     max-width: 1140px;
     width: 100%;
