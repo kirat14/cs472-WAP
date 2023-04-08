@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/aboutme.html"
+    "livePreview.defaultPreviewPath": "/lab3/src/index.html",
+    "git.ignoreLimitWarning": true
 }

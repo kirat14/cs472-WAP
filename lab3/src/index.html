@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Login - CS</title>
+</head>
+
+<body>
+  <!-- ******************* The Navbar Area ******************* -->
+  <header id="wrapper-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://s3.us-west-2.amazonaws.com/hf-files-oregon/hdpmiu_user_customized/2022/08-30/a4ce5601-eeaa-4d0c-8119-4b5d80934707/GJ.jpg"
+            alt="" class="d-inline-block align-text-top pe-2">
+          <span class="border-start ps-2">Compro Help Desk</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Agent Portal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Submit Ticket</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Knowledge Base</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header><!-- #wrapper-navbar end -->
+  <main>
+    <section class="bg-primary p-5">
+      <h2 class="text-center text-white">Welcome to our Support Center</h2>
+    </section>
+
+    <section class="container">
+      <div class="row mt-5 px-5">
+        <div class="col px-5">
+          <div class="p-3 mb-3">
+
+            <div>
+              <h3 class="mb-1">Login</h3>
+              <p class="mt-3 mb-0">Login to know the status of the ticket</p>
+              <a href="#" class="btn btn-primary bg-transparent text-primary"><img alt="Login using Azure AD"
+                  src="https://d12tly1s0ox52d.cloudfront.net/static/060423113549/support_center/images/azure%20ad.png"
+                  height="50"></a>
+              <p class="on-border-text">or login using</p>
+            </div>
+
+            <form class="row" id="yso-user-login-form">
+              <div class="col-12 mb-3">
+                <label for="user_login" class="form-label">Username</label>
+                <input type="text" required="" class="form-control" id="user_login" name="user_login"
+                  placeholder="Your username goes here" wfd-id="id0">
+
+                <div class="invalid-feedback">
+
+                </div>
+              </div>
+
+              <div class="col-12 mb-3">
+                <label for="user_pass" class="form-label">Password</label>
+                <input type="password" required="" class="form-control" id="user_pass" name="user_pass"
+                  placeholder="********" wfd-id="id1">
+                
+                  <div class="row flex-between-center mb-7">
+                    <div class="col-auto">
+                      <div class="form-check mb-0"><input class="form-check-input" id="basic-checkbox" type="checkbox" checked="checked"><label class="form-check-label mb-0" for="basic-checkbox">Remember me</label></div>
+                    </div>
+                    <div class="col-auto"><a class="fs--1 fw-semi-bold" href="../../../pages/authentication/simple/forgot-password.html">Forgot Password?</a></div>
+                  </div>
+              </div>
+
+                <button type="submit" class="btn btn-primary col-12 mt-4">Login</button>
+                
+            </form>
+          </div>
+        </div>
+        <div class="col">
+          <p class="pe-3">We invite you to join our growing number of clients that are already taking advantage of our
+            leads management platform to stay ahead of the competition. Our partial list of clients include Commercial
+            Banks, Insurance Professionals, Certified Public Accountants, Financial Advisors, Payroll Processors,
+            Financial Advisors, etc. If you fall into any of the categories above, we can’t wait to partner with you on
+            the road to unprecedented progress.
+          </p>
+          <div class="mt-5">
+            <button type="button" class="btn btn-primary bg-transparent text-primary">
+              <a href="https://www.fsileads.com/?page_id=25">Our Data Products<i
+                  class="fa-solid fa-arrow-right-long ms-3"></i></a></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="../js/script.js"></script>
+  <script type="module" src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

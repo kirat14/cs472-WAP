@@ -1,0 +1,20 @@
+{
+  "name": "lab3",
+  "version": "1.0.0",
+  "description": "CSHelpDesk-Login-webpage",
+  "main": "script.js",
+  "source": "./src/index.html",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "parcel ./src/index.html"
+  },
+  "author": "MOUMINI Tarik",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.4",
+    "parcel-bundler": "^1.12.5",
+    "popper.js": "^1.16.1",
+    "sass": "^1.61.0"
+  }
+}
