@@ -3725,7 +3725,7 @@ textarea.form-control-lg {
 
 .navbar {
   --bs-navbar-padding-x: 0;
-  --bs-navbar-padding-y: 0.7rem;
+  --bs-navbar-padding-y: 0.5rem;
   --bs-navbar-color: rgba(0, 0, 0, 0.55);
   --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
@@ -11551,4 +11551,8 @@ textarea.form-control-lg {
   display: inline-block;
   vertical-align: middle;
   max-height: 35px;
+}
+
+.bg-dark-subtle {
+  background-color: #e6e6e6;
 }/*# sourceMappingURL=style.css.map */
