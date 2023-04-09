@@ -9,7 +9,7 @@
   <title>Login - CS</title>
 </head>
 
-<body>
+<body class="bg-light">
   <!-- ******************* The Navbar Area ******************* -->
   <header id="wrapper-navbar">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -18,7 +18,7 @@
           <img
             src="https://s3.us-west-2.amazonaws.com/hf-files-oregon/hdpmiu_user_customized/2022/08-30/a4ce5601-eeaa-4d0c-8119-4b5d80934707/GJ.jpg"
             alt="" class="d-inline-block align-text-top pe-2">
-          <span class="border-start ps-2">Compro Help Desk</span>
+          <span class="border-start ps-2 fw-semibold">Compro Help Desk</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,8 +45,8 @@
     </nav>
   </header><!-- #wrapper-navbar end -->
   <main>
-    <section class="bg-primary p-5">
-      <h2 class="text-center text-white">Welcome to our Support Center</h2>
+    <section class="bg-info p-5">
+      <p class="text-center text-white display-5 fw-normal">Welcome to our Support Center</p>
     </section>
 
     <section class="container">
@@ -54,37 +54,40 @@
         <div class="col px-5">
           <div class="p-3 mb-3">
 
-            <div>
-              <h3 class="mb-1">Login</h3>
-              <p class="mt-3 mb-0">Login to know the status of the ticket</p>
-              <a href="#" class="btn btn-primary bg-transparent text-primary"><img alt="Login using Azure AD"
-                  src="https://d12tly1s0ox52d.cloudfront.net/static/060423113549/support_center/images/azure%20ad.png"
-                  height="50"></a>
-              <p class="on-border-text">or login using</p>
+            <div class="border-bottom mb-3">
+              <h2 class="mb-1">Login</h2>
+              <p class="my-3">Login to know the status of the ticket</p>
+              <a href="#" class="btn btn-secondary w-100 bg-white py-2 mb-2"><img alt="Login using Azure AD"
+                  src="img/azuread.png"></a>
+                  <!-- <p class="m-0 position-absolute bottom-0 start-50 translate-middle-x">or login using</p> -->
+                  <div class="d-flex justify-content-center align-items-end">
+                    <p class="mb-n2 small">or login using</p>
+                  </div>
             </div>
+            
 
             <form class="row" id="yso-user-login-form">
-              <div class="col-12 mb-3">
-                <label for="user_login" class="form-label">Username</label>
+              <div class="col-12 mb-2">
+                <label for="user_login" class="form-label">Username or Email</label>
                 <input type="text" required="" class="form-control" id="user_login" name="user_login"
-                  placeholder="Your username goes here" wfd-id="id0">
-
-                <div class="invalid-feedback">
-
-                </div>
+                  placeholder="Enter email" wfd-id="id0">
               </div>
 
-              <div class="col-12 mb-3">
+              <div class="col-12 mb-2">
                 <label for="user_pass" class="form-label">Password</label>
                 <input type="password" required="" class="form-control" id="user_pass" name="user_pass"
-                  placeholder="********" wfd-id="id1">
-                
-                  <div class="row flex-between-center mb-7">
-                    <div class="col-auto">
-                      <div class="form-check mb-0"><input class="form-check-input" id="basic-checkbox" type="checkbox" checked="checked"><label class="form-check-label mb-0" for="basic-checkbox">Remember me</label></div>
-                    </div>
-                    <div class="col-auto"><a class="fs--1 fw-semi-bold" href="../../../pages/authentication/simple/forgot-password.html">Forgot Password?</a></div>
+                  placeholder="Enter password" wfd-id="id1">
+              </div>
+
+              <div class="col-12">
+                <div class="row justify-content-between mb-7">
+                  <div class="col-auto">
+                    <div class="form-check mb-0">
+                      <input class="form-check-input" id="basic-checkbox" type="checkbox" checked="checked">
+                      <label class="form-check-label mb-0" for="basic-checkbox">Remember me</label></div>
                   </div>
+                  <div class="col-auto"><a class="fs--1 fw-semi-bold" href="../../../pages/authentication/simple/forgot-password.html">Forgot Password?</a></div>
+                </div>
               </div>
 
                 <button type="submit" class="btn btn-primary col-12 mt-4">Login</button>
@@ -93,17 +96,11 @@
           </div>
         </div>
         <div class="col">
-          <p class="pe-3">We invite you to join our growing number of clients that are already taking advantage of our
-            leads management platform to stay ahead of the competition. Our partial list of clients include Commercial
-            Banks, Insurance Professionals, Certified Public Accountants, Financial Advisors, Payroll Processors,
-            Financial Advisors, etc. If you fall into any of the categories above, we can’t wait to partner with you on
-            the road to unprecedented progress.
+          <p class="pe-3 fw-bold mt-4">
+            Login to track your existing support requests. If you have not created a ticket yet then you would need to 
+            <a href="/register">register</a> or <a href="/new">create a new ticket</a> to begin.
           </p>
-          <div class="mt-5">
-            <button type="button" class="btn btn-primary bg-transparent text-primary">
-              <a href="https://www.fsileads.com/?page_id=25">Our Data Products<i
-                  class="fa-solid fa-arrow-right-long ms-3"></i></a></button>
-          </div>
+            <button type="submit" class="btn btn-primary">Submit ticket</button>
         </div>
       </div>
     </section>
