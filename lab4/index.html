@@ -39,7 +39,17 @@
 
                             <div class="col-12 mb-3">
                                 <label for="user_pass" class="form-label">Password</label>
-                                <input type="password" required="" class="form-control" id="user_pass" name="user_pass" placeholder="********" wfd-id="id1">
+                                <input type="password" required="" class="form-control" id="user_pass" name="user_pass" 
+                                title="Password should at least contains 10 char from this 10 char must be one lowercase and one number at least" pattern="(?=.*[a-z])(?=.*[0-9]).{10,}">
+                                <div class="invalid-feedback">
+
+                                </div>
+                            </div>
+
+                            <div class="col-12 mb-3">
+                                <label for="user_url" class="form-label">URL</label>
+                                <input type="password" required="" class="form-control" id="user_url" name="user_url" title="URl should start with http or https and must be valid" 
+                                pattern="(https|http):\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)">
                                 <div class="invalid-feedback">
 
                                 </div>
