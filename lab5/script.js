@@ -60,34 +60,29 @@ function findLongestWord(words) {
     }, 0);
   }
 
-
-  function filterWordsByLength(wordsArray, minLength) {
-    return wordsArray.filter(function (word) {
-      return word.length > minLength;
+/* Q7 */
+  function filterLongWords(words, i) {
+    return words.filter(word => {
+      return word.length > i;
     });
   }
   
-  function sumOfSquares(numbersArray) {
-    return numbersArray.reduce(function (sum, number) {
-      return sum + number * number;
+  /* Q8 */
+  function computeSumOfSquares(arrayOfNumbers){
+    const sumOfSquares = arrayOfNumbers.reduce((acc, x) => {
+        return acc + x * x;
     }, 0);
+    return sumOfSquares;
   }
   
-  function printOddNumbersUsingForOf(numbersArray) {
-    for (let number of numbersArray) {
-      if (number % 2 !== 0) {
-        console.log(number);
-      }
-    }
-  }
-  
-  function printOddNumbers(numbersArray) {
-    numbersArray.forEach(function (number) {
-      if (number % 2 !== 0) {
-        console.log(number);
-      }
+  /* Q9 */
+  function printOddNumbersOnly(arrayOfNumbers) {
+    arrayOfNumbers.forEach(n => {
+        if(n % 2 !== 0)
+            console.log(n);
     });
   }
+  /* Q10 */
   
   function sumOfSquaresOfEvenNumbers(numbersArray) {
     return numbersArray
