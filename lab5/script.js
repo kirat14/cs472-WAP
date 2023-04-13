@@ -96,13 +96,13 @@ return sumOfSquares;
 /* Q11 */
 function sum(arr){
     return arr.reduce((acc,x) => {
-        return acc = acc + x;
+        return acc + x;
     } ,0);
 }
 
 function multiply(arr){
     return arr.reduce((acc, x) => {
-        return acc = acc * x;
+        return acc * x;
     }, 1);
 }
 //console.log(multiply([4, 4, 2]));
@@ -140,9 +140,25 @@ function printFibo(n, a, b) {
     }
 }
 
-printFibo(6, 0, 1);
+/* Q14 */
+function declarativeSum(arr) {
+    return arr.filter(x => {
+        if(x > 20)
+            return x
+    }).
+    reduce((acc, x) => {
+        return acc + x;
+    },0);
+}
+//console.log(declarativeSum([12, 30, 40]));
 
-
+function getNewArray(stringArr){
+    return stringArr.filter(x => {
+        if(x.length >= 5 && x.includes("a"))
+            return x;
+    });
+}
+console.log(getNewArray(['headrest', 'sheet']));
 
 /* Extra */
 const a = [1,3,5,3,3];
