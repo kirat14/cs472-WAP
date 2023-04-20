@@ -6,10 +6,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* tag 1 */
+        /* body {
+            background-color: yellow;
+            color: magenta;
+        }
+
+        p {
+            color: orange;
+        }
+
+        .central,
+        .item {
+            color: green;
+        }
+
+        #item {
+            background-color: cyan;
+        } */
+
+
+        div {
+
+            border: 1px solid black;
+
+        }
+
+
+
+        #b {
+
+            position: relative;
+
+            height: 200px;
+
+        }
+
+
+
+
+        #c {
+
+            position: absolute;
+
+            top: 0px;
+
+            bottom: 0px;
+
+            right: 0px;
+
+            width: 50px;
+
+        }
+    </style>
 </head>
 
 <body>
-    <script src="script.js"></script>
+
+
+    <!-- tag 1 -->
+    <!--     <p>First piece of text; what color am I?</p>
+    <div class="central">
+        <p>Second piece of text; what color am I?</p>
+        <ul>
+            <li id="item">Third piece of text; what color am I?</li>
+        </ul>
+    </div> -->
+
+
+    <div id="a">Text for a
+
+        <div id="b">Text for b
+
+            <div id="c">Text for c</div>
+
+        </div>
+
+    </div>
+
+    <script>
+
+        /* Example of result:
+        
+        {
+        
+        Quincy: 93.5,
+        
+         Sam: 86.5,
+        
+        Katie: 71.5
+        
+        } */
+        const students = [
+            {name: 'Quincy', grades: [99, 88], courses: ['cs301', 'cs303']},
+            {name: 'Jason', grades: [29, 38], courses: ['cs201', 'cs203']},
+            {name: 'Alexis', grades: [79, 78], courses: ['cs105', 'cs211']},
+            {name: 'Sam', grades: [91, 82], courses: ['cs445', 'cs303']},
+            {name: 'Katie', grades: [66, 77], courses: ['cs303', 'cs477']}
+        ];
+
+        let rslt = students.filter(x => {
+            return x.courses.includes('cs303');
+        })
+            .map(x => {
+                let avg = x.grades.reduce((acc, grade) => {
+                    return acc + grade;
+                }, 0);
+
+                avg = avg / x.grades.length;
+                return {[x.name]: avg};
+            });
+
+console.log(rslt);
+
+    </script>
+
+
+    <!-- <script src="script.js"></script> -->
 </body>
 
 </html>
