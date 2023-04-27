@@ -1,6 +1,4 @@
-let db = [{"id":1,"title":"Janet","description":"Chatwood","price":"12"},
-{"id":2,"title":"Rick","description":"Mudle","price":"50"},
-{"id":3,"title":"Kevina","description":"Gosswell","price":"20"}];
+let db = [];
 let counter = 0;
 
 module.exports = class Product {
