@@ -1,7 +1,7 @@
 const Product = require('../models/product');
 
 exports.save = (req, res, next) => {
-    console.log(req.body);
+    console.log("save called");
     const addedProd = new Product(null, req.body.title, req.body.description, req.body.price).save();
     res.status(201).json(addedProd);
 }
