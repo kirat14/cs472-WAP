@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>My Shop</title>
+</head>
+
+<body class="test">
+    <header class="custom-nav text-white py-2">
+        <div class="container-xxl d-flex justify-content-between">
+            <div class="logo-image">
+                <img src="./images/logo.png" alt="logo" />
+                <a href="https://www.flaticon.com/free-icons/commerce-and-shopping" class="opacity-0">Commerce and
+                    shopping icons created by Vignesh Oviyan - Flaticon</a>
+            </div>
+            <div class="main-header">
+                <h2 class="text-center text-lg-start">Welcome dear <span class="text-primary" id="username-label" style="color: #65e6cf !important;"></span>
+                </h2>
+            </div>
+            <div class="main-header">
+                <button type="button" id="logout-button" class="btn btn-outline-light">Logout</button>
+            </div>
+        </div>
+    </header>
+    <main class="container-xxl mt-5 bg-light">
+        <div id="main-body">
+            <div>
+                <h2>Product list</h2>
+                <table id="product-table" class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Image</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="product-body">
+                    </tbody>
+                </table>
+            </div>
+            <div class="shopping-container bg-white p-3 mt-4">
+                <h2 class="gutter">Your shopping cart</h2>
+                <div id="shopping-cart-table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>Total</th>
+                                <th>Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-body"></tbody>
+                    </table>
+                    <div class="d-flex justify-content-end place-order-button">
+                        <button id="checkout-btn" class="btn btn-success me-xxl-5">Place order</button>
+                    </div>
+                </div>
+                <div id="shopping-cart-message">
+                    <h2 class=" text-secondary">There is no item in your shopping cart !</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="alert-custom" class="alert-custom alert-hide alert alert-danger" role="alert">Error</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+    
+
+</body>
+
+</html>
